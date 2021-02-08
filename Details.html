@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Submit Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.8.3.js'></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+    <script type='text/javascript'
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="icon" href="DashboardSvg/url.svg">
+</head>
+
+<body onload="start()">
+    <nav class="navbar navbar-light bg-lignt">
+        <img src="DashboardIMG/download.jpg" class="img-fluid-BDR" alt="Responsive image">
+        <img src="DashboardIMG/face.webp" class="img-fluid-BDR-1">
+        <span class="img-fluid-BDR-2">kian Doyle</span></a>
+        <img src="DashboardSvg/bell.svg" class="img-fluid-BDR-3">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon my-toggler"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="dash.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Listpage.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Invoices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex" id="wrapper">
+        <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+                <!-- <img src="DashboardIMG/dashimg.jpeg" class="img-fluid" alt="Responsive image"
+                    style="margin-top: 45px; width: 240px;"> -->
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="dash.html">
+                        <img src="DashboardSvg/dashboard.svg" class="img-fluid-Header-Dashboard">
+                        <span style="color:rgb(249, 249, 252);">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarquotes.svg" class="img-fluid-Header-sidebarquotes">
+                        <span style="color:rgb(249, 249, 252);">Quotes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Listpage.html">
+                        <img src="DashboardSvg/sidebarorders.svg" class="img-fluid-Header-sidebarorders">
+                        <span style="color:rgb(249, 249, 252);">Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarorders.svg" class="img-fluid-Header-sidebarorders">
+                        <span style="color:rgb(249, 249, 252);">Invoices</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarCase.svg" class="img-fluid-Header-sidebarCase">
+                        <span style="color:rgb(249, 249, 252);">Cases</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarlogout.svg" class="img-fluid-Header-sidebarlogout">
+                        <span style="color:rgb(249, 249, 252);">log out</span>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row align-items-center  mb-3 border-bottom shadow-sm">
+                <h6 class="font-weight-normal">Hi! Welcome back <b>Devin</b></h6>
+                <a class="font-weight-normal1">1908 Progress way,Alburnett,lowa-52202
+                    USA</span></a>
+                <nav class="Header">
+                    <img src="DashboardIMG/face.webp" class="img-fluid-Header-1"></a>
+
+                    <span class="img-fluid-Header-2">kian Doyle</span></a>
+                    <img src="DashboardSvg/bell.svg" class="img-fluid-Header-3"></a>
+                </nav>
+            </div>
+            <div class="card FDA">
+
+                <div class="row">
+                 <div class="col-md-2 md-2">
+                    <label for="order_Id" style="margin-left: 24%;margin-top: 10px; color: white;" id="orderIdLable" class="font-weight-bold">ORDERS #</label>
+                   <span id="order_Id"></span>
+                </div>
+            </div>
+                <form class="row g-3 needs-validation" id="deatilform" onsubmit="return false" novalidate>
+                    <!-- id colum  -->
+                    <!-- Name colum -->
+                    <div class="col-md-4 mb-4">
+                        <label for="FirstName" style="margin-left: 3%;">Name</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                        <input type="text" class="form-control" id="FirstName" placeholder="Enter your name"
+                            autocomplete="off" maxlength="45" required>
+                        <div class="invalid-feedback">
+                            Please Enter a valid Name!
+                        </div>
+                    </div>
+                    <!-- Number -->
+                    <div class="col-md-4 mb-3">
+                        <label for="ContactNumber" style="margin-left: 3%">Contact Number</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                        <input type="text" class="form-control" id="ContactNumber" placeholder="Contact Number"
+                         minlength="10" maxlength="10" autocomplete="off" required>
+                        <div class="invalid-feedback">
+                            Please Enter a valid Contact Number!
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom001" style="margin-left: 3%;">Email</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                        <input type="email" class="form-control" id="confirm_email" placeholder="Enter your email"
+                          autocomplete="off"  maxlength="255" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <div class="invalid-feedback">
+                            Please Enter a valid Email!
+                        </div>
+                    </div>
+                      <!-- Date -->
+                      <div class="col-md-4 mb-3">
+                        <label for="date" style="margin-left: 3%;">Date</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                    <div class="input-group date" data-provide="datepicker"> 
+                            <input type="text" class="form-control" id="date" autocomplete="off">
+                            <div class="input-group-addon"> 
+                            <span><img src="DashboardSvg/date.svg"
+                                    class="img-fluid-date-1"></span>
+                       </div> 
+                        </div>
+                    </div>
+                    <!-- Country colum -->
+                    <div class="col-md-4 mb-3">
+                        <label for="Country" style="margin-left: 3%;">Country</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                        <select class="form-control" id="Country" autocomplete="off" required>
+                            <option value="" selected="selected">-- Select Country --</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Country!
+                        </div>
+                    </div>
+                    <!-- State -->
+                    <div class="col-md-4 mb-3">
+                        <label for="Country" style="margin-left: 3%;">State</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                        <select class="form-control" id="State" autocomplete="off" required>
+                            <option value="" selected="selected">-- Select State --</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state!
+                        </div>
+                    </div>
+                    <!-- City -->
+                    <div class="col-md-4 mb-3">
+                        <label for="City" style="margin-left: 3%;">City</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                        <select class="form-control" id="City" required>
+                            <option value="" selected="selected">-- Select City --</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid City!
+                        </div>
+                    </div>
+                            <!-- Address -->
+                    <div class="col-md-4 mb-3">
+                        <label for="Address" style="margin-left: 3%;">Address</label><img src="DashboardSvg/asterisk.svg"
+                                                            class="img-fluid-date-asterisk">
+                        <input type="text" class="form-control" id="Address" placeholder="Address" maxlength="45"
+                            autocomplete="off" required>
+                        <div class="invalid-feedback">
+                            Please Enter a valid Address!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3"></div>
+                    <!--  -->
+                    <div>
+                        <div class="form-check" id="formCheck" style="margin-left: 23px;">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="btn-10" class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+                <div class="card-body-AFD">
+                    <div class="row">
+                    <div class="col-md-12">
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" id="fetchBtn"
+                        onclick="getProductList()" data-target="#myModal">Add Products</button>
+                    </div>   
+                    </div>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="text-center-Product">
+                                    <h3>Products</h3>
+                                </div>
+                                <div class="modal-header">
+                                    <div class="input-group md-form form-sm form-2 pl-0">
+                                        <input type="text" id="searchInput" onkeyup="searchFunction()"
+                                            placeholder="Search for Products....">
+                                        <div class="input-group-append">
+                                        </div>
+                                    </div>
+                                    <button type="button" id="close-btn" class="close"
+                                        onclick="window.location.reload()">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-sm" id="productTable">
+                                            <thead>
+                                                <tr>
+                                                    <th><img src="DashboardSvg/checkbox.svg"
+                                                            class="img-fluid-date-checkbox"></th>
+                                                    <th>Product Name</th>
+                                                    <th>Descripition</th>
+                                                    <th>Cost Per Unit</th>
+                                                    <th>Quantity</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="close-BTN" class="btn btn-outline-primary"
+                                        onclick="addproduct()">(+)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body-products">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm" id="orderDetailTable">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Descripition</th>
+                                    <th>Cost Per Unit</th>
+                                    <th>Quantity</th>
+                                    <th>Tax</th>
+                                    <th>Total Price</th>
+                                    <th>Created Date</th>
+                                    <th>Action</th>
+                                    <!-- <th>Total</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td  class="right" colspan="5"><p class="text-right">GRAND Total</p></td>
+                                        <td><span id="grandTotal"></span></td>
+                                    </tr>
+                                </tfoot>        
+                        </table>
+                    </div>
+                    <p id="orderAddText">No Orders Added yet!</p>
+                </div> 
+                </div>
+            </div>
+        </div>
+        <script src="dash.js"></script>
+</body>
+
+</html>

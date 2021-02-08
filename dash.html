@@ -1,0 +1,382 @@
+  <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="icon" href="DashboardSvg/url.svg">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-lignt">
+        <img src="DashboardIMG/download.jpg" class="img-fluid-BDR" alt="Responsive image">
+        <img src="DashboardIMG/face.webp" class="img-fluid-BDR-1">
+        <span class="img-fluid-BDR-2">kian Doyle</span></a>
+        <img src="DashboardSvg/bell.svg" class="img-fluid-BDR-3"> 
+            
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon my-toggler"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="dash.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Listpage.html">Orders</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Invoices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex" id="wrapper">
+        <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+                <!-- <img src="DashboardIMG/download.jpg" class="img-fluid" alt="Responsive image"
+                    style="margin-top: 45px; width: 240px;"> -->
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="dash.html">
+                        <img src="DashboardSvg/dashboard.svg" class="img-fluid-Header-Dashboard">
+                        <span style="color:rgb(249, 249, 252);">Dashboard</span>
+                    </a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarquotes.svg" class="img-fluid-Header-sidebarquotes">
+                        <span style="color:rgb(249, 249, 252);">Quotes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Listpage.html">
+                        <img src="DashboardSvg/sidebarorders.svg" class="img-fluid-Header-sidebarorders">
+                        <span style="color:rgb(249, 249, 252);">Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarorders.svg" class="img-fluid-Header-sidebarorders">
+                        <span style="color:rgb(249, 249, 252);">Invoices</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarCase.svg" class="img-fluid-Header-sidebarCase">
+                        <span style="color:rgb(249, 249, 252);">Cases</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="DashboardSvg/sidebarlogout.svg" class="img-fluid-Header-sidebarlogout">
+                        <span style="color:rgb(249, 249, 252);">log out</span>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row align-items-center  mb-3 border-bottom shadow-sm">
+                <h6 class="font-weight-normal">Hi! Welcome back <b>Devin</b></h6>
+                <a class="font-weight-normal1">1908 Progress way,Alburnett,lowa-52202
+                    USA</span></a>
+                    <nav class="Header">
+                        <img src="DashboardIMG/face.webp" class="img-fluid-Header-1"></a>
+    
+                        <span class="img-fluid-Header-2">kian Doyle</span></a>
+                        <img src="DashboardSvg/bell.svg" class="img-fluid-Header-3"></a>
+                    </nav>
+            </div>
+            <div class="row yu-1">
+                <div class="col-sm-3">
+                    <div class="card card-Quotes">
+                        <div class="row">
+                            <div class="col-sm" style="margin-left: 7%;">
+                                <span style="color:rgb(249, 249, 252);">Quotes</span>
+                                <br> <span style="color:rgb(249, 249, 252);">$66,319.00</span>
+                                <br> <span style="color:rgb(249, 249, 252);">+12,000</span>
+                               <img src="DashboardSvg/Quotes.svg" class="img-fluid-RT-1"
+                                        style="margin-left: 45%; width: 13%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <a class="card-Order-link" href="Listpage.html"><div class="card card-Order">
+                        <div class="row">
+                            <div class="col-sm" style="margin-left: 7%;">
+                                <span style="color:rgb(249, 249, 252);">Orders</span>
+                                <br> <span style="color:rgb(249, 249, 252);">$227,088.00</span>
+                                <br> <span style="color:rgb(249, 249, 252);">+32,000</span>
+                                <img src="DashboardSvg/order.svg" class="img-fluid-RT"
+                                        style="margin-left: 44%; width: 17%;">
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card card-Invoices">
+                        <div class="row">
+                            <div class="col-sm" style="margin-left: 7%;">
+                                <span style="color:rgb(254, 254, 255);">Invoices</span>
+                                <br> <span style="color:rgb(249, 249, 252);">$66,789</span>
+                                <br> <span style="color:rgb(249, 249, 252);">+2,600</span>
+                               <img src="DashboardSvg/invoices.svg"
+                                        class="mobile_profile_image" style="margin-left: 49%; width: 12%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card card-Cases">
+                        <div class="row">
+                            <div class="col-sm" style="margin-left: 7%;">
+                                <span style="color:rgb(249, 249, 252);">Cases</span>
+                                <br> <span style="color:rgb(249, 249, 252);">Coming Soon</span>
+                                <br> <span style="color:rgb(249, 249, 252);"></span>
+                               <img src="DashboardSvg/coming.svg" class="img-fluid"
+                                        style="margin-left: 64%; width: 16%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card logos-1">
+                <label for="Custom01" style="
+                /* margin-top: 3px; */
+                margin-left: 41px;
+                margin-bottom: -18px;
+            ">Brands</label>
+                <div class="card-body">
+                    <div class="row">
+                        
+                        <div class="col">
+                           <img src="DashboardIMG/amerimax-color-logo.jpg"
+                                    class="img-fluid-LOGO-1"></a>
+                        </div>
+                        <div class="col">
+                            <img src="DashboardIMG/alumawood-color-logo.jpg"
+                                    class="img-fluid-LOGO-2"></a>
+                        </div>
+                        <div class="col">
+                            <img src="DashboardIMG/berger-color-logo.jpg"
+                                    class="img-fluid-LOGO-3"></a>
+                        </div>
+                        <div class="col">
+                            <img src="DashboardIMG/KWD_Logo_color500x140-300x84.jpg"
+                                    class="img-fluid-LOGO-4"></a>
+                        </div>
+                        <div class="col">
+                         <img src="DashboardIMG/fabral-logo-smll.jpg"
+                                    class="img-fluid-LOGO-5"></a>
+                        </div>
+                        <div class="col">
+                            <img src="DashboardIMG/equinox_logo-sml.jpg"
+                                    class="img-fluid-LOGO-6" style="width: 100%;"></a>
+                        </div>
+                        <div class="col">
+                          <img src="DashboardIMG/coppercraft-color-logo.jpg"
+                                    class="img-fluid-LOGO-7"></a>
+                        </div>
+                        <div class="col">
+                           <img src="DashboardIMG/amerimax-windows-doors-color-logo.jpg" class="img-fluid-LOGO-8"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row yu-4">
+                <div class="col-sm-4">
+                    <div class="card card-Rec">
+                        <div class="card img-fluid" style="width:267px">
+                            <img class="card-img-top" src="DashboardIMG/omni1.jpg" alt="Card image"
+                                style="width:100%; height:306px;">
+                            <div class="card-img-overlay4">
+                                <p class="card-text">Architectural & Commercial<br>Building Solutions.</p>
+                                <a href="#" class="btn btn-info">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card-card-5">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card img-fluid" style="height:143px; margin-left: -7px;">
+                                    <img class="card-img-top" src="DashboardIMG/omni22.jpg" alt="Card image"
+                                        style="width:139%; height:142px; margin-left: -71px;">
+                                    <div class="card-img-overlay5">
+                                        <p class="card-text-12">Residential Solutions</p>
+                                        <a href="#" class="btn btn-info">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card-card-1">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="card img-fluid" style="height:143px; width: 27px; margin-left: 442px;">
+                                        <img class="card-img-top" src="DashboardIMG/omni3.jpg" alt="Card image"
+                                            style="width:1540%; height:144px; margin-left: -176px; margin-top: -146;">
+                                        <div class="card-img-overlay6">
+                                            <p class="card-text-23">Post Frame &<br>Agricultural Solutions.
+                                            </p>
+                                            <a href="#" class="btn btn-info">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="card-card-2">
+                            <div class="row">
+                                <div class="col-MS">
+                                    <div class="card img-fluid" style="height:160px; width: 602px; margin-top: 8px; margin-left: -7px;">
+                                        <img class="card-img-top" src="DashboardIMG/omni4.jpg" alt="Card image"
+                                            style="width:125%; height:159px; margin-left: -72px;">
+                                        <div class="card-img-overlay7">
+                                            <p class="card-text-12">Recreational Vehicle &<br>Transportation Solutions.
+                                            </p>
+                                            <a href="#" class="btn btn-info">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn" href="#multi-item-example" data-slide="prev"><i
+                            class="fas fa-chevron-left"></i></a>
+                    <a class="btn" href="#multi-item-example" data-slide="next"><i
+                            class="fas fa-chevron-right"></i></a>
+                </div>
+                
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="" data-slide-to="0"></li>
+                    <li data-target="" data-slide-to="1"></li>
+                    <li data-target="" data-slide-to="2"></li>
+                    <li data-target="" data-slide-to="3"></li>
+                </ol> 
+                <!--/.Indicators
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                     <div class="carousel-item active">
+                        <div class="col-md-4-LFT">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="DashboardIMG/omni1.jpg" alt="Card image cap">
+                                <!-- <div class="card-body"> -->
+                                    <div class="card-img-overlay52">
+                                        <p class="card-text">Architectural & Commercial<br>Building Solutions.</p>
+                                        <a href="#" class="btn btn-info">Learn More</a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                        <div class="col-md-4-LFT">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="DashboardIMG/omni22.jpg" alt="Card image cap">
+                                <!-- <div class="card-body"> -->
+                                    <div class="card-img-overlay70">
+                                        <p class="card-text">Architectural & Commercial<br>Building Solutions.</p>
+                                        <a href="#" class="btn btn-info">Learn More</a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-4-SLD">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="DashboardIMG/omni3.jpg" alt="Card image cap">
+                                <!-- <div class="card-body"> -->
+                                    <div class="card-img-overlay84">
+                                        <p class="card-text">Architectural & Commercial<br>Building Solutions.</p>
+                                        <a href="#" class="btn btn-info">Learn More</a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Third slide-->
+                    <div class="carousel-item">
+                        <div class="col-md-PNG">
+                            <div class="card mb-2-PNG">
+                                <img class="card-img-top-PNG" src="DashboardIMG/omni4.jpg" alt="Card image cap">
+                                <!-- <div class="card-body-PNG"> -->
+                                    <div class="card-img-overlay98">
+                                        <p class="card-text">Architectural & Commercial<br>Building Solutions.</p>
+                                        <a href="#" class="btn btn-info">Learn More</a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
+        </div>
+
+
+        <!-- <div>container div </div> -->
+    </div>
+   
+    <script src="dash.js"></script>
+</body>
+
+</html>
